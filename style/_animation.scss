@@ -1,0 +1,16 @@
+.msg-1 , 
+.msg-2,
+.dog-images,
+.msg-1:nth-child(3),
+.walk-plan,
+.text-field
+ {
+    animation: to-bot 1.5s forwards cubic-bezier(0.4, 0, 0.21, 0.64);
+}
+@keyframes to-bot {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+
+    }
+}

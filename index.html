@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="style/main.css">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,76 +18,78 @@
   <script src="https://kit.fontawesome.com/cc881b3a23.js" crossorigin="anonymous"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center;  margin-top: 25px;}
+    .attribution { font-size: 11px; text-align: center;  margin-top: 10px;}
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  <div class="center-show flex">
-    <div class="phone flex clm">
-      <div class="samuel-green">
-        <div class="circle">
-          <img src="images/avatar.jpg" alt="avatar">
+  <div class="relative">
+    <div class="center-show flex">
+      <div class="phone flex clm">
+        <div class="samuel-green">
+          <div class="circle">
+            <img src="images/avatar.jpg" alt="avatar">
+          </div>
+          <div class="name">
+            <p>Samuel Green</p>
+            <p>Available to Walk</p>
+          </div>
         </div>
-        <div class="name">
-          <p>Samuel Green</p>
-          <p>Available to Walk</p>
+    
+        <div class="messages flex clm">
+          <div class="msg-1"><p>That sounds great. I’d be happy with that.</p></div>
+          <div class="msg-1"><p>Could you send over some pictures of your dog, please?</p></div>
+          <div class="dog-images flex">
+            <div class="square-image">
+              <img src="images/dog-image-1.jpg" alt="dog-1">
+            </div>
+            <div class="square-image">
+              <img src="images/dog-image-2.jpg" alt="dog-2">
+            </div>
+            <div class="square-image">
+              <img src="images/dog-image-3.jpg" alt="dog-3">
+            </div>
+          </div>
+          <div class="msg-2"><p>Here are a few pictures. She’s a happy girl!</p></div>
+          <div class="msg-2"><p>Can you make it?</p></div>
+          <div class="msg-1"><p>She looks so happy! The time we discussed works. How long shall I take her out for?</p></div>
+          <label class="walk-plan flex">
+            
+            <input type="radio" name="walk-plan" id="walk-plan-1" checked>
+            <div class="check"></div>
+            <label for="walk-plan-1">30 minute walk </label>
+            <strong>$29</strong>
+          </label>
+          <label class="walk-plan flex">
+            <!-- <p>1 hour walk <span>$49</span></p> -->
+            
+            <input type="radio" name="walk-plan" id="walk-plan-2">
+            <div class="check"></div>
+            <label for="walk-plan-2">1 hour walk </label>
+            <strong>$49</strong>
+          </label>
+          <div class="text-field flex">
+            <input type="text" placeholder="Type a message...">
+            <i class="fas fa-chevron-circle-left"></i>
+          </div>
         </div>
       </div>
-
-      <div class="messages flex clm">
-        <div class="msg-1"><p>That sounds great. I’d be happy with that.</p></div>
-        <div class="msg-1"><p>Could you send over some pictures of your dog, please?</p></div>
-        <div class="dog-images flex">
-          <div class="square-image">
-            <img src="images/dog-image-1.jpg" alt="dog-1">
-          </div>
-          <div class="square-image">
-            <img src="images/dog-image-2.jpg" alt="dog-2">
-          </div>
-          <div class="square-image">
-            <img src="images/dog-image-3.jpg" alt="dog-3">
-          </div>
-        </div>
-        <div class="msg-2"><p>Here are a few pictures. She’s a happy girl!</p></div>
-        <div class="msg-2"><p>Can you make it?</p></div>
-        <div class="msg-1"><p>She looks so happy! The time we discussed works. How long shall I take her out for?</p></div>
-        <label class="walk-plan flex">
-          
-          <input type="radio" name="walk-plan" id="walk-plan-1" checked>
-          <div class="check"></div>
-          <label for="walk-plan-1">30 minute walk </label>
-          <strong>$29</strong>
-        </label>
-        <label class="walk-plan flex">
-          <!-- <p>1 hour walk <span>$49</span></p> -->
-          
-          <input type="radio" name="walk-plan" id="walk-plan-2">
-          <div class="check"></div>
-          <label for="walk-plan-2">1 hour walk </label>
-          <strong>$49</strong>
-        </label>
-        <div class="text-field flex">
-          <input type="text" placeholder="Type a message...">
-          <i class="fas fa-chevron-circle-left"></i>
-        </div>
+    
+      <div class="main-title">
+        <h1>Simple booking</h1>
+        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.
+        </p>
       </div>
+    
+      
+      
+      
     </div>
-
-    <div class="main-title">
-      <h1>Simple booking</h1>
-      <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-        discuss arrangements and make bookings. Once the walk has been completed you can rate 
-        your walker and book again all through the chat.
-      </p>
-    </div>
-
-    
-    
-    
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Achraf Essaoudi</a>.
+    Coded by <a href="https://github.com/ashrafess00?tab=repositories" target="_blank">Achraf Essaoudi</a>.
 </body>
 </html>

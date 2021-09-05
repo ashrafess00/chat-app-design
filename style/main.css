@@ -190,7 +190,7 @@ input[type=text]::placeholder {
 @media (max-width: 400px) {
   body::before {
     left: -28em;
-    width: 616px;
+    width: 646px;
     height: 73%;
   }
 
@@ -202,8 +202,12 @@ input[type=text]::placeholder {
     display: none;
   }
 
+  .relative {
+    position: relative;
+  }
+
   .center-show.flex {
-    margin-left: -3.5em;
+    margin: 7em auto;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -213,7 +217,7 @@ input[type=text]::placeholder {
     bottom: -14em;
     right: -43px;
     width: 54%;
-    height: 46%;
+    height: 71%;
     background-color: #e942ff;
     border-radius: 300px 300px 0 0;
     opacity: 0.1;
@@ -222,8 +226,7 @@ input[type=text]::placeholder {
   }
   .center-show.flex .main-title {
     text-align: center;
-    margin-left: 3em;
-    margin-top: 3em;
+    margin: 0 auto;
     padding: 1.9em;
     width: 100%;
   }

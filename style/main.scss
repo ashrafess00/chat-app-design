@@ -3,132 +3,93 @@
 @import "animation";
 @import "media-queries";
 
-// body::after {
-//     content: "";
-//     position: absolute;
-//     bottom: 0;
-//     right: 0;
-//     width: 422px +100px;
-//     height: 1000px;
-//     @include grd(170deg);
-//     border-radius:300px 300px 0 0;
-//     opacity: 1;
-//     z-index: -1;
-// }
 .background {
-    max-width: 100%;
-
-    // .bg-2 {
-    //     position: absolute;
-    //     bottom: -15px;
-    //     right: 0;
-    //     width: 422px +100px;
-    //     height: 1000px;
-    //     @include grd(170deg);
-    //     border-radius:300px 300px 0 0;
-    //     opacity: 1;
-    //     z-index: -1;
-    // }
+  max-width: 100%;
 }
-// .bg-1 {
-//     position: absolute;
-//     top: 0;
-//     left: -100px;
-//     width: 32.625em;
-//     height: 708px;
-//     @include grd(170deg);
-//     border-radius: 0 0 300px 300px;
-//     // z-index: ;
-// }
-
-
 
 .center-show {
-    // height: 31.5em;
-    right: -46.6em;
-    top: 9.127em;
-    margin-left: 22.1em;
-    margin-top: 7em;
-    max-width: 51em;
+  right: -46.6em;
+  top: 9.127em;
+  margin-left: 22.1em;
+  margin-top: 7em;
+  max-width: 51em;
 
-    .main-title {
-        width: 27.625em;
-        margin-left: 7.625em;
-        margin-top: 10.5em;
-        h1 {
-            color: $Very-Dark-Desaturated-Violet;
-            margin-bottom: 1.9375em;
-        }
-        p {
-            color: $Very-Dark-Desaturated-Violet;
-        }
+  .main-title {
+    width: 27.625em;
+    margin-left: 7.625em;
+    margin-top: 10.5em;
+    h1 {
+      color: $Very-Dark-Desaturated-Violet;
+      margin-bottom: 1.9375em;
     }
+    p {
+      color: $Very-Dark-Desaturated-Violet;
+    }
+  }
 }
 
 .phone {
-    background-color: $Light-Grayish-Violet;
-    border: $White solid 7px;
-    border-radius: 20px;
+  background-color: $Light-Grayish-Violet;
+  border: $White solid 7px;
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 1px -1px 50px 0px black;
+  position: relative;
+  width: 15.125em;
+  height: 32.5em;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 7.625em;
+    height: 1.4375em;
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 0 0 13px 13px;
+  }
+
+  .samuel-green {
+    width: 100%;
+    height: 4.125em;
+    border-radius: 20px 20px 0 0;
+    @include grd(to right);
+    padding: 10px;
+    .name {
+      margin-top: 12px;
+      font-size: 10px;
+      color: white;
+      & p:first-child {
+        font-size: 12px;
+        font-weight: 500;
+        color: white;
+      }
+      & p:last-child {
+        opacity: 0.6;
+        color: white;
+      }
+    }
+  }
+
+  .messages {
     height: 100%;
-    box-shadow: 1px -1px 50px 0px black;
-    position: relative;
-    width: 15.125em;
-    height: 32.5em;
-    &::before {
-        content: "";
-        position: absolute;
-        width: 7.625em;
-        height: 1.4375em;
-        background-color: white;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        border-radius: 0 0 13px 13px;
-        
-    }
-    
-    .samuel-green {
-        width: 100%;
-        height: 4.125em;
-        border-radius: 20px 20px 0 0;
-        @include grd;
-        padding: 10px;
-        .name {
-            margin-top: 12px;
-            font-size: 10px;
-            color: white;
-            & p:first-child {
-                font-size: 12px;
-                font-weight: 500;
-                color: white;
-            }
-            & p:last-child {
-                opacity: 0.6;
-                color: white;
-            }
-        }
-    }
+    justify-content: space-around;
+    padding: 0.5em;
+  }
 
-    .messages {
-        height: 100%;
-        justify-content: space-around;
-        padding: 0.5em;
-    }
+  .text-field {
+    background-color: $White;
+    border-radius: 30px;
+    width: 13.25em;
+    height: 2.0625em;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em;
 
-    .text-field{
-        background-color: $White;
-        border-radius: 30px;
-        width: 13.25em;
-        height: 2.0625em;
-        margin: 0 auto;
-        align-items: center;
-        padding: 1em;
-        
-        i {
-            margin-left: auto;
-            transform: rotate(180deg) scale(1.4);
-            color: $Very-Dark-Desaturated-Violet;
-
-        }
+    i {
+      margin-left: auto;
+      transform: rotate(180deg) scale(1.4);
+      color: $Very-Dark-Desaturated-Violet;
     }
+  }
 }

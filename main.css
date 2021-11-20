@@ -13,7 +13,6 @@ body {
   font-family: "Rubik", sans-serif;
   height: 100vh;
   line-height: 1.8;
-  overflow-x: hidden;
 }
 
 body::before {
